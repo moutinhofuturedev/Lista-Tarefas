@@ -1,0 +1,81 @@
+* {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    padding: 0 ;
+    margin: 0;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-45deg, #12FFF7, #B1FFAB, #B433FF, #284AFF);
+    background-size: 400% 400%;
+    animation: change 10s ease-in-out infinite;
+}
+
+/* div criada no web component - relógio (watch.js) */
+div {
+    display: flex;
+    flex-direction: column;
+    font-size: 6rem;
+    margin: 0 10px;
+}
+
+/* estilo da data criada em javascrit (watch.js) */
+#date {
+    margin: 0 290px;
+}
+
+summary, label {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 0 20px;
+    padding: 6px 0;
+}
+
+label {
+    display: block;
+}
+
+#style-checkbox {
+    -webkit-appearance: none;
+    position: relative;
+    width: 18px;
+    height: 18px;
+    margin: 0 5px;
+    border-radius: 15px;
+    background: #000;
+    border: 2px solid #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 20x rgba(0, 0, 0, 0.1);
+}
+
+#style-checkbox:checked{
+    background: rgb(233, 218, 4);
+}
+
+.counter {
+    position: absolute;
+    margin: 0 700px;
+    top: 130px;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+@keyframes change {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}

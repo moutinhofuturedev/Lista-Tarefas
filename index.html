@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <title>Web Components - Tarefas e Contador</title>
+</head>
+
+<body>
+        <section>
+
+                <meu-relogio title="Horário de Brasília"></meu-relogio>
+
+                <h3 id='date'></h3>
+
+                <details>
+                        <summary>Atividades para fazer</summary>
+                        <label for="activities">Estudar programação ás 6:00<input type="checkbox" class="checkbox" onclick="upDateList()"
+                                        id="style-checkbox"></label>
+                        <label for="activities">Verificar setup da igreja ás 9:00<input type="checkbox" class="checkbox" onclick="upDateList()"
+                                        id="style-checkbox"></label>
+                        <label for="activities">Almoçar com a família ás 13:00<input type="checkbox" class="checkbox" onclick="upDateList()"
+                                        id="style-checkbox"></label>
+                        <label for="activities">Voltar a estudar programação ás 14:00<input type="checkbox" onclick="upDateList()"
+                                        class="checkbox" id="style-checkbox"></label>
+                        <label for="activities">Lavar a louça ás 16:00<input type="checkbox" class="checkbox" onclick="upDateList()"
+                                        id="style-checkbox"></label>
+                        <label for="activities">Descansar ás 17:00<input type="checkbox" class="checkbox" onclick="upDateList()"
+                                        id="style-checkbox"></label>
+                        <label for="activities">Tomar café ás 18:00<input type="checkbox" class="checkbox" onclick="upDateList()"
+                                        id="style-checkbox"></label>
+                        <label for="activities">Continuar estudando programação ás 19:00 <input type="checkbox" onclick="upDateList()"
+                                        class="checkbox" id="style-checkbox"></label>
+                </details>
+
+                <div class="counter">
+                        <h4>Tarefas Concluídas</h4>
+                        <hr>
+                        <p id="result"></p>
+                </div>
+        </section>
+
+
+        <script src="watch.js"></script>
+        <script src="list.js"></script>
+</body>
+
+</html>

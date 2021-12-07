@@ -49,6 +49,8 @@ customElements.define('meu-relogio', MeuRelogioElement)
 
 // criar e formatar data padrão brasileiro
 const contentDate = document.getElementById('date')
-let date = new Date()
+const date = new Date()
 
-contentDate.textContent = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`
+contentDate.textContent = `${String(date.getDate()).padStart(2, '0')}/${date.getMonth() + 1}/${date.getFullYear()}`
+
+

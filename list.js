@@ -12,7 +12,7 @@ function upDateList() { //criando a função que a cada click no checkbox,increm
     }
 }
 
-upDateList() //chamando a função
+
 
 
 
